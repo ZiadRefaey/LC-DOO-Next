@@ -5,4 +5,29 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+:root {
+  --success: 76, 175, 80;
+  --error: 224, 75, 75;
+}
+.light {
+  --background: 250, 248, 247;
+  --card-background: 242, 235, 234;
+  --primary-text: 60, 47, 42;
+  --secondary-text: 122, 85, 76;
+  --divider: 216, 198, 194;
+  --primary: 122, 85, 76;
+  --btn-hover: 108, 74, 66;
+  --secondary: 201, 143, 129;
+  --footer-background: 234, 230, 229;
+}
+.dark {
+  --background: 30, 30, 30;
+  --card-background: 42, 42, 42;
+  --primary-text: 242, 237, 235;
+  --secondary-text: 196, 167, 159;
+  --divider: 68, 64, 60;
+  --primary: 122, 85, 76;
+  --btn-hover: 108, 74, 66;
+  --secondary: 201, 143, 129;
+  --footer-background: 37, 37, 37;
+}
