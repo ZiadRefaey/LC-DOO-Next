@@ -1,6 +1,7 @@
 import React from "react";
 import { product } from "../../product.type";
 import ProductsList from "../../ProductsList";
+import ProductsPagination from "./ProductsPagination";
 const products: product[] = [
   {
     discountPercentage: 20,
@@ -68,8 +69,11 @@ const products: product[] = [
 ];
 export default function ProductsWrapper() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-5 items-center justify-between place-items-center w-full ">
-      <ProductsList products={products} />
+    <section className="flex items-center justify-center flex-col gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-5 items-center justify-between place-items-center w-full ">
+        <ProductsList products={products} />
+      </div>
+      <ProductsPagination />
     </section>
   );
 }
