@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Section";
+import Section from "../../ui/Section";
 import TextPanel from "./TextPanel";
 import ImagePanel from "./ImagePanel";
 

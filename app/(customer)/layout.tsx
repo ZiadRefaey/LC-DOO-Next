@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../globals.css";
 import DesktopNavbar from "@/components/customer/layout/navbar/DesktopNavbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-background antialiased px-6 md:px-10 xl:px-[100px] py-6 md:py-10 light text-primary-text`}
+        className={`${inter.className} bg-background antialiased px-6 md:px-10 xl:px-[100px] py-6 md:py-10 light text-primary-text`}
       >
         <DesktopNavbar />
         {children}
