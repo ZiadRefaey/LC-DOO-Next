@@ -10,10 +10,11 @@ body {
   --error: 224, 75, 75;
 }
 .light {
+  --border: 177, 177, 177;
   --background: 250, 248, 247;
   --card-background: 242, 235, 234;
   --primary-text: 60, 47, 42;
-  --secondary-text: 122, 85, 76;
+  --secondary-text: 255, 255, 255;
   --divider: 216, 198, 194;
   --primary: 122, 85, 76;
   --btn-hover: 108, 74, 66;
@@ -21,6 +22,7 @@ body {
   --footer-background: 234, 230, 229;
 }
 .dark {
+  --border: 177, 177, 177;
   --background: 30, 30, 30;
   --card-background: 42, 42, 42;
   --primary-text: 242, 237, 235;

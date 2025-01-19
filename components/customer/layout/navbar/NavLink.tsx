@@ -15,7 +15,7 @@ export default function NavLink({
       href={href}
       className={`${
         active ? "text-primary-text underline" : "text-lightGray font-regular"
-      } text-preset-3 text-secondary-text hover:text-primary-text hover:underline`}
+      } text-preset-3 text-border hover:text-primary-text hover:underline`}
     >
       {children}
     </Link>

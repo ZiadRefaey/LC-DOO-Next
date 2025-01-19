@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -10,7 +11,6 @@ export default function PrimaryButton({
   disabled,
   href,
   rounded = "rounded-lg md:rounded-xl",
-  color = "bg-tertiary",
 }: {
   type?: "button" | "submit" | "reset" | undefined;
   children?: ReactNode;
@@ -20,12 +20,11 @@ export default function PrimaryButton({
   padding?: string;
   href?: string;
   rounded?: string;
-  color?: string;
 }) {
   if (href)
     return (
       <Link
-        className={`${className} py-2 px-5 text-sm ${rounded} md:text-md lg:text-lg ${color} hover:bg-btn-hover text-white bg-primary transition-all duration-150 text-center`}
+        className={`${className} bg-primary py-2 px-5 text-preset-3-bold ${rounded} text-secondary-text  transition-all duration-150 text-center hover:bg-btn-hover`}
         style={{ padding: padding }}
         href={href}
       >
@@ -37,7 +36,10 @@ export default function PrimaryButton({
       disabled={disabled}
       type={type}
       onClick={onClick}
-      className={` py-2 px-5 text-sm ${rounded} md:text-md lg:text-lg ${className} ${color} hover:opacity-75 text-white transition-all duration-150`}
+      className={cn(
+        `bg-primary py-2 px-5 text-preset-3-bold ${rounded} text-secondary-text transition-all duration-150 text-center hover:bg-btn-hover`,
+        className
+      )}
       style={{ padding: padding }}
     >
       {children}
