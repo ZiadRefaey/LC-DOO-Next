@@ -3,7 +3,6 @@ import { product } from "./product.type";
 import ProductCard from "./ProductCard";
 
 export default function ProductsList({ products }: { products: product[] }) {
-  console.log("productsList", products);
   return products.map((product: product, index: number) => (
     <ProductCard
       key={index}

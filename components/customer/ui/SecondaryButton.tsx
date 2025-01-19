@@ -6,20 +6,19 @@ export default function SecondaryButton({
   className,
   href,
   onClick,
-  type,
+  type = "button",
 }: {
   children: ReactNode;
-  className: string;
-  href: string;
-  onClick: () => void;
-  type: "button" | "submit" | "reset" | undefined;
+  className?: string;
+  href?: string;
+  onClick?: () => void;
+  type?: "button" | "submit" | "reset" | undefined;
 }) {
+  const sharedClassName =
+    "text-preset-4-bold bg-card-background hover:bg-inherit hover:border hover:border-primary transition-all duration-200 rounded-xl py-4 px-6 border text-center";
   if (href)
     return (
-      <Link
-        className={`${className} text-body-sm xl:text-body-lg md:text-body-md hover:text-tertiary transition-all duration-200`}
-        href={href}
-      >
+      <Link className={`${className} ${sharedClassName}`} href={href}>
         {children}
       </Link>
     );
@@ -27,7 +26,7 @@ export default function SecondaryButton({
     <button
       onClick={onClick}
       type={type}
-      className={`${className} ]text-body-sm xl:text-body-lg md:text-body-md hover:text-tertiary transition-all duration-200`}
+      className={`${className} ${sharedClassName}`}
     >
       {children}
     </button>

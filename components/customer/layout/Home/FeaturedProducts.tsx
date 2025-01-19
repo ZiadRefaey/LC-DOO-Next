@@ -2,6 +2,7 @@ import React from "react";
 import { product } from "./product.type";
 import Section from "../../ui/Section";
 import ProductsShowcase from "./ProductsShowcase";
+import SecondaryButton from "../../ui/SecondaryButton";
 const featuredProducts: product[] = [
   {
     discountPercentage: 20,
@@ -33,11 +34,13 @@ const featuredProducts: product[] = [
   },
 ];
 export default function FeaturedProducts() {
-  console.log("featured", featuredProducts);
   return (
     <Section>
       <h2 className="text-preset-1 uppercase mb-10">Featured</h2>
       <ProductsShowcase products={featuredProducts} />
+      <SecondaryButton className="w-[218px] mt-10" href="/">
+        View All
+      </SecondaryButton>
     </Section>
   );
 }
