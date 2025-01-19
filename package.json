@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.2",
     "@reduxjs/toolkit": "^2.5.0",
     "@supabase/supabase-js": "^2.47.14",
     "class-variance-authority": "^0.7.1",
