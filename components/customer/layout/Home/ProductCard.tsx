@@ -3,23 +3,18 @@ import Link from "next/link";
 import React from "react";
 import image from "@/public/image.png";
 import StarRating from "../../ui/StarRating";
+import { product } from "./product.type";
 export default function ProductCard({
   href,
   title,
   discountPercentage,
   price,
   rating,
-}: {
-  href: string;
-  title: string;
-  price: number;
-  rating: number;
-  discountPercentage: number;
-}) {
+}: product) {
   return (
     <Link
       href={`${href}`}
-      className="group w-[292px] flex flex-col gap-5 cursor-pointer group  transition-all duration-200"
+      className="self-center group w-[292px] flex flex-col gap-5 cursor-pointer group  transition-all duration-200"
     >
       <div className="w-full h-[295px] bg-card-background border-[1px] rounded-2xl p-9 relative">
         <div className=" absolute top-3 right-3 bg-error/10 rounded-2xl px-4 py-2">
