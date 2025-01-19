@@ -1,5 +1,5 @@
 import React from "react";
-import { product } from "./product.type";
+import { product } from "../product.type";
 import Section from "../../ui/Section";
 import ProductsShowcase from "./ProductsShowcase";
 import SecondaryButton from "../../ui/SecondaryButton";

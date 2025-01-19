@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import image from "@/public/image.png";
 import StarRating from "../../ui/StarRating";
-import { product } from "./product.type";
+import { product } from "../product.type";
 export default function ProductCard({
   href,
   title,
