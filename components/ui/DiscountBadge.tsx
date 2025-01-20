@@ -9,7 +9,7 @@ export default function DiscountBadge({
 }) {
   return (
     <span
-      className={`${className} bg-error/10 rounded-2xl px-4 py-2 text-center text-preset-5 text-error`}
+      className={`${className} bg-error/10 rounded-2xl px-4 py-1 text-center text-preset-5 text-error`}
     >
       <p className="">{discountPercentage}%</p>
     </span>
