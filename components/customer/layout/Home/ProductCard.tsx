@@ -4,6 +4,7 @@ import React from "react";
 import image from "@/public/image.png";
 import StarRating from "../../ui/StarRating";
 import { product } from "../product.type";
+import DiscountBadge from "@/components/ui/DiscountBadge";
 export default function ProductCard({
   href,
   title,
@@ -17,9 +18,10 @@ export default function ProductCard({
       className="self-center group w-[292px] flex flex-col gap-5 cursor-pointer group  transition-all duration-200"
     >
       <div className="w-full h-[295px] bg-card-background border-[1px] rounded-2xl p-9 relative">
-        <div className=" absolute top-3 right-3 bg-error/10 rounded-2xl px-4 py-2">
-          <p className="text-preset-5 text-error">{discountPercentage}%</p>
-        </div>
+        <DiscountBadge
+          className="absolute top-3 right-3"
+          discountPercentage={discountPercentage}
+        />
         <div className="relative size-[225px] aspect-square">
           <Image
             fill
