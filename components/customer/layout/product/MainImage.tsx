@@ -3,7 +3,7 @@ import React from "react";
 import image from "@/public/image.png";
 export default function MainImage({ title }: { title: string }) {
   return (
-    <div className="w-full h-full bg-card-background rounded-xl ">
+    <div className="w-full h-[90%] bg-card-background rounded-xl ">
       <div className="w-full h-[100%] relative m-auto flex items-center justify-center">
         <Image
           src={image}

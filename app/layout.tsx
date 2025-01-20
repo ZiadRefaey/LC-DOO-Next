@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-background antialiased px-6 md:px-10 xl:px-[100px] py-6 md:py-10 dark text-primary-text`}
+        className={`${inter.className} bg-background antialiased px-6 md:px-10 xl:px-[100px] py-6 md:py-10 light text-primary-text`}
       >
         <DesktopNavbar />
         {children}

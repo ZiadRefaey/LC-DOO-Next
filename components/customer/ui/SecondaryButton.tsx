@@ -15,7 +15,7 @@ export default function SecondaryButton({
   type?: "button" | "submit" | "reset" | undefined;
 }) {
   const sharedClassName =
-    "text-preset-4-bold bg-card-background hover:bg-inherit hover:border hover:border-primary transition-all duration-200 rounded-xl py-4 px-6 border text-center";
+    "text-preset-4-bold bg-card-background hover:bg-inherit hover:border hover:border-primary transition-all duration-200 rounded-xl py-4 px-6 border text-center ";
   if (href)
     return (
       <Link className={`${className} ${sharedClassName}`} href={href}>
