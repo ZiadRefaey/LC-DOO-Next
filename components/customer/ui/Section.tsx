@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
 
 export default function Section({
@@ -9,7 +10,10 @@ export default function Section({
 }) {
   return (
     <section
-      className={`py-[30px] m-auto md:py-10 flex flex-col items-center justify-center w-full max-w-[1240px] ${className}`}
+      className={cn(
+        `py-[30px] m-auto md:py-10 flex flex-col items-center justify-center w-full max-w-[1240px]`,
+        className
+      )}
     >
       {children}
     </section>
