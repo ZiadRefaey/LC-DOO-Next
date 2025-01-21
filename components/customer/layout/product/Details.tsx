@@ -15,7 +15,6 @@ import Divider from "../../ui/Divider";
 export default function Details() {
   return (
     <div className="flex items-start justify-start flex-col gap-5 w-full h-full ">
-      {/* <div className="flex flex-col items-start justify-center gap-5"> */}
       <Rating />
       <Header />
       <Price />

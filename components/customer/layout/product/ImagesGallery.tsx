@@ -1,6 +1,6 @@
 import React from "react";
 import MainImage from "./MainImage";
-import ThumbnailsGalary from "./ThumbnailsGalary";
+import ThumbnailsGalary from "./ThumbnailsGallery";
 
 export default function ImagesGalary() {
   return (
