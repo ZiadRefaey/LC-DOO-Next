@@ -1,9 +1,11 @@
 import React from "react";
 import StarRating from "../../ui/StarRating";
+import ReviewOptions from "./ReviewOptions";
 
 export default function ReviewCard() {
   return (
     <div className="w-full rounded-xl border border-border px-6 py-4 md:px-8 md:py-6 relative flex items-start justify-center flex-col gap-3">
+      <ReviewOptions />
       <div className="flex items-center justify-center gap-2 mb-2">
         <StarRating />
         <span className="text-primary text-preset-3-bold mt-1">
