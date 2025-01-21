@@ -24,7 +24,7 @@ export default function PrimaryButton({
   if (href)
     return (
       <Link
-        className={`${className} bg-primary py-2 px-5 text-preset-3-bold ${rounded} text-secondary-text  transition-all duration-150 text-center hover:bg-btn-hover`}
+        className={`${className} bg-primary py-3 px-5 text-preset-3-bold ${rounded} text-secondary-text  transition-all duration-150 text-center hover:bg-btn-hover`}
         style={{ padding: padding }}
         href={href}
       >
@@ -37,7 +37,7 @@ export default function PrimaryButton({
       type={type}
       onClick={onClick}
       className={cn(
-        `bg-primary py-2 px-5 text-preset-3-bold ${rounded} text-secondary-text transition-all duration-150 text-center hover:bg-btn-hover`,
+        `bg-primary py-3 px-5 text-preset-3-bold ${rounded} text-secondary-text transition-all duration-150 text-center hover:bg-btn-hover`,
         className
       )}
       style={{ padding: padding }}
