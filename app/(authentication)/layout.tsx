@@ -18,8 +18,8 @@ export default function RootLayout({
           />
         </div>
       </div>
-      <div className="w-full py-0 overflow-scroll max-h-[calc(100vh-60px)] md:max-h-[calc(100vh-80px] scrollbar-none">
-        <div className="py-0">{children}</div>
+      <div className="w-full py-0 overflow-scroll max-h-[calc(100vh-60px)] md:max-h-[calc(100vh-80px] scrollbar-none flex items-center justify-center">
+        <div className="w-full">{children}</div>
       </div>
     </main>
   );
