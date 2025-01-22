@@ -13,6 +13,7 @@ export default {
         background: "rgba(var(--background))",
         "card-background": "rgba(var(--card-background))",
         "primary-text": "rgba(var(--primary-text))",
+        "primary-text-soft": "rgba(var(--primary-text-soft))",
         "secondary-text": "rgba(var(--secondary-text))",
         divider: "rgba(var(--divider))",
         border: "rgba(var(--border))",

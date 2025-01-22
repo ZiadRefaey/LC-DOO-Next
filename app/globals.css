@@ -8,12 +8,23 @@ body {
 :root {
   --success: 76, 175, 80;
   --error: 224, 75, 75;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-none {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 .light {
   --border: 177, 177, 177;
   --background: 250, 248, 247;
   --card-background: 242, 235, 234;
   --primary-text: 60, 47, 42;
+  --primary-text-soft: 136, 127, 124;
   --secondary-text: 255, 255, 255;
   --divider: 216, 198, 194;
   --primary: 122, 85, 76;
@@ -26,6 +37,7 @@ body {
   --background: 30, 30, 30;
   --card-background: 42, 42, 42;
   --primary-text: 242, 237, 235;
+  --primary-text-soft: 245, 242, 240;
   --secondary-text: 196, 167, 159;
   --divider: 68, 64, 60;
   --primary: 122, 85, 76;
