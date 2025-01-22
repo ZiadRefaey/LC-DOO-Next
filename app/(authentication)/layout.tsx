@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <main className="w-full max-h-[100vh] grid grid-cols-1 lg:grid-cols-2 gap-10 ">
-      <div className="hidden w-full h-[calc(100vh-60px)] md:h-[calc(100vh-80px)]">
+      <div className="hidden lg:block w-full h-[calc(100vh-60px)] md:h-[calc(100vh-80px)]">
         <div className="w-full h-full rounded-3xl relative overflow-hidden">
           <Image
             className="object-cover"
