@@ -7,27 +7,21 @@ export default function PrimaryButton({
   children,
   className,
   onClick,
-  padding,
   disabled,
   href,
-  rounded = "rounded-lg md:rounded-xl",
 }: {
   type?: "button" | "submit" | "reset" | undefined;
   children?: ReactNode;
   className?: string;
   onClick?: () => void;
   disabled?: boolean;
-  padding?: string;
   href?: string;
-  rounded?: string;
 }) {
+  const unifiedClassName =
+    "bg-primary py-3 px-5 text-preset-3-bold text-secondary-text rounded-xl transition-all duration-150 text-center hover:bg-btn-hover";
   if (href)
     return (
-      <Link
-        className={`${className} bg-primary py-3 px-5 text-preset-3-bold ${rounded} text-secondary-text  transition-all duration-150 text-center hover:bg-btn-hover`}
-        style={{ padding: padding }}
-        href={href}
-      >
+      <Link className={cn(unifiedClassName, className)} href={href}>
         {children}
       </Link>
     );
@@ -36,11 +30,7 @@ export default function PrimaryButton({
       disabled={disabled}
       type={type}
       onClick={onClick}
-      className={cn(
-        `bg-primary py-3 px-5 text-preset-3-bold ${rounded} text-secondary-text transition-all duration-150 text-center hover:bg-btn-hover`,
-        className
-      )}
-      style={{ padding: padding }}
+      className={cn(unifiedClassName, className)}
     >
       {children}
     </button>
