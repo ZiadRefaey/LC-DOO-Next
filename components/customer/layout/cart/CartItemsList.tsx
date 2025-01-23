@@ -1,0 +1,12 @@
+import React from "react";
+import CartItem from "./CartItem";
+
+export default function CartItemsList() {
+  return (
+    <section className="w-full flex flex-col items-center justify-center">
+      <CartItem />
+      <CartItem />
+      <CartItem />
+    </section>
+  );
+}

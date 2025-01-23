@@ -4,7 +4,7 @@ import Header from "./Header";
 import Price from "./Price";
 import FormControlGroup from "./FormControlGroup";
 import Colors from "./Colors";
-import QuantityPicker from "./QuantityPicker";
+import QuantityPicker from "../../ui/QuantityPicker";
 import Description from "./Description";
 import SizePicker from "./SizePicker";
 import PrimaryButton from "../../ui/PrimaryButton";
