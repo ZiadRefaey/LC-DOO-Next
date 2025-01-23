@@ -1,5 +1,6 @@
 import React from "react";
 import CartItem from "./CartItem";
+import CartPagination from "./CartPagination";
 
 export default function CartItemsList() {
   return (
@@ -7,6 +8,7 @@ export default function CartItemsList() {
       <CartItem />
       <CartItem />
       <CartItem />
+      <CartPagination />
     </section>
   );
 }
