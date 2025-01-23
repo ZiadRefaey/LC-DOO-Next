@@ -3,6 +3,7 @@ import React from "react";
 import hero from "@/public/contact-hero.png";
 import ContactDetails from "@/components/customer/layout/contact/ContactDetails";
 import Section from "@/components/customer/ui/Section";
+import FormContainer from "@/components/customer/layout/contact/FormContainer";
 export default function page() {
   return (
     <main className="w-full flex flex-col gap-[50px]  ">
@@ -17,8 +18,9 @@ export default function page() {
           fill
         />
       </section>
-      <Section className="grid grid-cols-1 xl:grid-cols-[0.35fr,0.65fr]">
+      <Section className="grid grid-cols-1 xl:grid-cols-[0.35fr,0.65fr] gap-10">
         <ContactDetails />
+        <FormContainer />
       </Section>
     </main>
   );
