@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <>
       <DesktopNavbar />
-      {children}
+      <main className="flex flex-col items-center justify-center gap-[50px] mx-auto max-w-[1240px]">
+        {children}
+      </main>
       <Footer />
     </>
   );

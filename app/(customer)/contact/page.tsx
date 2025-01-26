@@ -7,7 +7,7 @@ import FormContainer from "@/components/customer/layout/contact/FormContainer";
 import LocationMap from "@/components/customer/layout/contact/LocationMap";
 export default function page() {
   return (
-    <main className="w-full flex flex-col gap-[50px]  ">
+    <>
       <section className="w-[100vw] h-[600px] xl:h-[500px] relative flex items-center justify-center -mx-6 md:-mx-10 xl:-mx-[100px]">
         <p className="text-5xl font-bold z-10 text-white uppercase">
           contact us
@@ -26,6 +26,6 @@ export default function page() {
       <Section>
         <LocationMap />
       </Section>
-    </main>
+    </>
   );
 }
