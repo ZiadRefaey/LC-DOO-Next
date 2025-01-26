@@ -11,8 +11,7 @@ export default function RootLayout({
       <div className="w-full h-full bg-red-300"></div>
       <main className="w-full h-full bg-blue-300 overflow-y-scroll ">
         {children}
-      </main>
-      {/* {children} */}
+      </main>{" "}
     </div>
   );
 }
