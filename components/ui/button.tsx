@@ -47,7 +47,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <Comp
         className={cn(
           buttonVariants({ variant, size, className }),
-          "bg-card-background text-primary-text hover:text-white hover:bg-primary"
+          "bg-card-background text-primary-text hover:text-white hover:bg-primary hover:border-primary"
         )}
         ref={ref}
         {...props}
