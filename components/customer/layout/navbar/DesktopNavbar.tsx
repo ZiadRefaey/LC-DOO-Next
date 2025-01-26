@@ -14,7 +14,7 @@ export default function DesktopNavbar() {
   if (noNavbarRoutes.includes(pathname)) return;
   return (
     <NavWrapper>
-      <div className="flex  items-center justify-start transition-all duration-500 static">
+      <div className="flex items-center justify-start transition-all duration-500 static">
         <NavLogo />
       </div>
       <NavLinksWrapper />

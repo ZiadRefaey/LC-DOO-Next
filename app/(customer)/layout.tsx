@@ -14,10 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className={` antialiased px-6 md:px-10 xl:px-[100px] py-6 md:py-10`}>
+    <>
       <DesktopNavbar />
       {children}
       <Footer />
-    </div>
+    </>
   );
 }
