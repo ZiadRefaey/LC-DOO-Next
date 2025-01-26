@@ -1,5 +1,8 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
-export default function Divider() {
-  return <div className="w-full h-[1px] bg-divider"></div>;
+export default function Divider({ className }: { className?: string }) {
+  return (
+    <div className={twMerge(`w-full h-[1px] bg-divider`, className)}></div>
+  );
 }
