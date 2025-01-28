@@ -12,7 +12,7 @@ export default function NavLinksWrapper() {
         <NavLink href={"/store"}>Store</NavLink>
       </li>
       <li>
-        <NavLink href={"/contactus"}>Contact Us</NavLink>
+        <NavLink href={"/contact"}>Contact Us</NavLink>
       </li>
       <li>
         <NavLink href={"/admin/dashboard"}>Admin</NavLink>

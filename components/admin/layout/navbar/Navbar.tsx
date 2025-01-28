@@ -6,27 +6,27 @@ import NavLink from "./NavLink";
 const iconStyling = "group-hover:text-primarys";
 const navigationLinks = [
   {
-    path: '/admin/dashboard"',
+    path: "/admin/dashboard",
     title: "Dashboard",
     icon: <SiGoogleanalytics className={iconStyling} />,
   },
   {
-    path: '/admin/products"',
+    path: "/admin/products",
     title: "Products",
     icon: <GiAmpleDress className={iconStyling} />,
   },
   {
-    path: '/admin/orders"',
+    path: "/admin/orders",
     title: "Orders",
     icon: <MdAttachMoney className={iconStyling} />,
   },
   {
-    path: '/admin/projects"',
+    path: "/admin/projects",
     title: "Projects",
     icon: <FaScissors className={iconStyling} />,
   },
   {
-    path: '/admin/customers"',
+    path: "/admin/customers",
     title: "Customers",
     icon: <FaPeopleGroup className={iconStyling} />,
   },
